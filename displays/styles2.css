@@ -1,0 +1,464 @@
+/* Global styles */
+body {
+
+  margin: 0;
+  background: linear-gradient(180deg, rgba(15, 63, 81, 0.50) 0%, rgba(15, 63, 81, 0.00) 100%);
+  padding: 0;
+}
+
+/* Container-first styles 
+this container just puts all others in middle dont remove it leave it as it is. if u make it red it will make the background red
+its same as body but its above the body to make things align correctly . so dont touch it saleh :)
+*/
+.container-first {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container-second styles
+this is the second box which shows above the first background. it have the doctor pic ,name, setting and logout icon. 
+its white color with sharp edges not rounded
+*/
+.container-second {
+  width: 1100px;
+  height: 650px;
+  background-color: white;
+  display: flex;
+  opacity: 0.99;
+  flex-direction: row;
+  align-items: center;
+}
+
+.vertical-box {
+  width: 93px;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(15, 63, 81, 0.50), #dad9d95f);
+  align-items: center;
+  padding: 24px;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 50px;
+}
+
+
+.username {
+  margin-left: -2px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+
+/* Logout icons styles */
+.logout {
+  align-self: flex-end;
+  margin-top: 455px;
+}
+.logout1 {
+  align-self: flex-end;
+  margin-top: 15px;
+}
+
+
+.logout:active {
+  transform: scale(0.90) translateY(0px);
+}
+
+
+/*our third container which has word "profile" in h3 form*/
+.container-third {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(15, 63, 81, 0.446), #dad9d95f);
+  padding: 20px;
+  flex-basis: 1;
+  flex-grow: 1;
+}
+
+/* our word "profile" above in contaienr third */
+h3 {
+  color: #271E4A;
+  font-size: 24px;
+  font-weight: 200;
+  font-family: "kanit";
+  margin: -8px 0;
+
+
+}
+
+/* this is our white box inside which contains doctor picture and searchbar and fifth container */
+.container-forth {
+  width: 100%;
+  height: 520px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.769);
+  border-radius: 47px;
+  box-shadow: 0px 4px 15px rgba(216, 210, 252, 0.64);
+}
+
+/* the inside box of container forth */
+.inner-box {
+  width: 750px;
+  height: 450px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0px 4px 15px rgba(216, 210, 252, 0.64);
+  margin-left: 170px;
+  border-bottom-right-radius: 47px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.profile-picture {
+  position: absolute;
+  top: 215px;
+  right: 900px;
+  width: 145px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  color: white;
+  width: 420px;
+  height: 33px;
+  border-radius: 16px;
+  background-color: #6C756B;
+  border-color: rgba(232, 28, 28, 0);
+  font-size: 16px;
+  margin-left: 50px;
+  align-items: center;
+  text-align: center;
+  margin-right: 10px;
+  margin: 3px;
+}
+
+.button:active {
+  transform: scale(0.95) translateY(1px);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.arrow {
+  outline: none;
+  width: 30px;
+}
+
+.arrow:active {
+  transform: scale(0.90) translateY(0px);
+}
+
+.personal-files {
+  font-size: 35px;
+  padding: 10px;
+}
+
+.nurse-details {
+  text-align: right;
+  margin-right: 788px;
+  padding-top: 10px;
+  /* margin-top: 20px; */
+  color: #271E4A;
+
+  font-size: 20px;
+  font-family: "kanit";
+}
+
+
+.add-more-bar {
+  width: 890px;
+  height: 35px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 47px;
+  background: #889DA4;
+  color: white;
+  margin-left: 30px;
+
+}
+
+/* for the text inside the bar . it moves it up and down , right and left*/
+.add-more-bar p {
+  margin: 3px 0;
+  padding-left: 48px;
+  font-size: 18px;
+}
+
+/* i had problem that the things i added inside container forthw ould go last not inside container turn out prblem was from the margin btototm in add mre bar */
+.hey {
+  width: 876px;
+  margin: -10px 25px;
+  padding-left: 20px;
+}
+
+.hey p {
+  padding-left: 10px;
+}
+
+.short_button {
+  color: white;
+  width: 120px;
+  height: 33px;
+  border-radius: 16px;
+  background-color: #6C756B;
+  border-color: rgba(0, 0, 0, 0);
+  font-size: 16px;
+  margin-left: 525px;
+  text-align: center;
+}
+
+.short_button:active {
+  transform: scale(0.95) translateY(1px);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.page-number {
+  color: rgba(39, 30, 74, 0.80);
+  font-size: 10px;
+  font-family: "kanit";
+  font-weight: 300;
+  word-wrap: break-word;
+  margin: 100px 20px;
+
+}
+
+.add-edit-delete {
+  margin: 0 2px;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+
+}
+
+.add-edit-delete:active {
+  transform: scale(0.90) translateY(1px);
+
+}
+
+
+.verified-unverified {
+  display: flex;
+  flex-direction: row;
+  margin: -37px 640px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.64);
+  white-space: nowrap;
+
+}
+
+.verified-unverified p {
+  margin-right: 15px;
+}
+
+/* this is for class="checkbox" */
+.checkbox {
+  float: right;
+  margin-right: 77px;
+
+}
+
+/* this is for id="checkbox" */
+#checkbox {
+  display: flex;
+  flex-direction: row;
+  gap: 55px;
+
+}
+
+#checkbox p {
+  margin: 0 -55px;
+}
+
+.box {
+  display: flex;
+  gap: 30px;
+  margin-right: 35px;
+  padding-bottom: 43px;
+  margin-top: 6px;
+}
+
+.files {
+  text-align: right;
+  margin-right: 875px;
+  padding-top: 10px;
+  /* margin-top: 20px; */
+  color: #271E4A;
+  font-size: 25px;
+  font-family: "kanit";
+}
+
+.space {
+  margin: 90px 0;
+
+
+}
+
+.page-number2 {
+  color: rgba(39, 30, 74, 0.552);
+  font-size: 10px;
+  font-family: "kanit";
+  font-weight: 300;
+  word-wrap: break-word;
+  margin: 60px 1px;
+
+}
+
+.position-word {
+  display: flex;
+  flex-direction: row;
+  margin: -33px 700px;
+  font-size: 18px;
+  white-space: nowrap;
+
+}
+
+
+.medicalprofessionals {
+  text-align: right;
+  margin-right: 740px;
+  padding-top: 15px;
+  /* margin-top: 20px; */
+  color: #271E4A;
+  font-size: 20px;
+  font-family: "kanit";
+}
+
+
+/* CSS for the flex container */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* CSS for the grey line */
+.grey-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.388);
+}
+
+
+.ability {
+  text-align: right;
+  margin-right: 863px;
+  padding-top: 15px;
+  /* margin-top: 20px; */
+  color: #271E4A;
+  font-size: 20px;
+  font-family: "kanit";
+}
+
+a.policy:link {
+  color: rgba(0, 0, 255, 0.517);
+  text-decoration: none;
+}
+
+a.policy:visited {
+  color: rgba(0, 0, 255, 0.517);
+  text-decoration: underline;
+}
+
+a.policy:hover {
+  color: rgba(0, 0, 255, 0.804);
+  text-decoration: underline;
+}
+
+.policy {
+  margin-left: 600px;
+}
+
+
+
+.grid-container {
+  display: flex;
+  grid-template-columns: auto auto auto;
+  padding-left: 120px;
+  margin-top: -65px;
+  
+}
+.btn {
+  background: rgba(102, 102, 102, 0.13);
+  border-radius: 50px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border: none;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 12px;
+  color: #000000;
+  text-align: center;
+  gap: 10px;
+  font-weight: 300;
+}
+
+.btn.selected {
+  border: 1px solid  #666666; /* Change border color to red */
+  background: rgba(102, 102, 102, 0.239);
+  margin-top: -10px;
+}
+
+.btn:active {
+  transform: scale(1);
+  box-shadow: 0 0 5px rgba(31, 31, 31, 0.131);
+}
+
+
+
+.form-word {
+  margin-left: 40px;
+  margin-top: -10px;
+  padding-top: 20px;
+  /* text-align: left; */
+  font-weight: 500;
+  font-size: 15px;
+  position: static;
+}
+
+.vl {
+  border-left: 0.5px rgba(102, 102, 102, 0.20) solid;
+  height: 420px;
+  margin: -415px 110px;
+
+}
+
+.hr {
+  border-top: 0.5px rgba(102, 102, 102, 0.20) solid;
+  height: 450px;
+  margin: 14px 110px;
+
+}
+
+
+.standards {
+  margin-left: 28px;
+  display: grid;
+}
+
+.measurment-list {
+  margin-right: 10px;
+}
+
+
+.active{
+  border: 1px black;
+  color:black;
+  
+}
+
+

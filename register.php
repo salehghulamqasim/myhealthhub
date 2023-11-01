@@ -1,7 +1,6 @@
 <?php
 // Initialize sessions
 session_start();
-
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -17,10 +16,12 @@ if (!$conn) {
 $username = $_POST['username'];
 $email = $_POST['email'];
 $password = $_POST['password'];
+$occupation = $_POST['occupation']; 
 
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-$qry = "INSERT INTO `TheTable`(username, email, password) VALUES ('$username', '$email', '$hashedPassword')";
+// $qry = "INSERT INTO `TheTable`(username, email, password) VALUES ('$username', '$email', '$hashedPassword')";
+$qry = "INSERT INTO `TheTable`(username, email, password, occupation) VALUES ('$username', '$email', '$hashedPassword','$occupation')";
 
 $sendData = mysqli_query($conn, $qry);
 

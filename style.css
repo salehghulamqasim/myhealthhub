@@ -1,32 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 * {
     /* global family */
-
     margin: 0;
     padding: 0;
 
 }
 
 .hero {
-    height: 100vh;
+    height: 102vh;
     width: 100%;
-    background-image: url(img/banner2.jpg);
-    background-position: center;
-    background-size: cover;
+    
+    background-image: linear-gradient(122deg, rgba(15, 63, 81, 0.50) 12.63%, rgba(15, 63, 81, 0.00) 59.46%), url(img/background.jpeg);
+    background-repeat: no-repeat;
+    background-position: -50px center;
+    background-size:contain;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
+    margin-left: -70px;
+
 }
-
-
+.welcome {
+    font-size: 40px;
+    font-family: "Road Rage";
+    font-weight: 400;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    width: 274px;
+    height: 66px;
+    margin-top: -70px;
+}
 
 .form-box {
     width: 380px;
-    height: 480px;
+    height: 580px;
     position: relative;
     background: #fff;
     border-radius: 10%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+
     /* (overflow: hidden) hides the unselected form */
 
 
@@ -39,7 +52,9 @@
     position: relative;
     box-shadow: 0 0 30px 5px rgba(14, 5, 2, 0.108);
     border-radius: 5px;
-    ;
+    text-align: center;
+    
+
 }
 
 .toggle-btn {
@@ -60,11 +75,13 @@
     position: absolute;
     width: 110px;
     height: 100%;
-    background:skyblue;
+    background:rgba(148, 172, 180, 0.695);
     border-radius: 5px;
     transition: .5s;
+    
 
 }
+/* background:rgba(148, 172, 180, 1); */
 
 .social-icons {
     margin-top: 30px ;
@@ -84,28 +101,55 @@
     position: absolute;
     width: 28px;
     transition: .5s;
+    /* margin-top: -20px; */
 }
 
 .input-field {
     width: 1000%;
-    padding: 10px 0;
+    padding: 15px 0;
     margin-bottom: 20px;
     border: none;
     color: rgba(0, 0, 0, 0.695);
     font-size: 16px;
-
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #c7c3c3;
     outline: none;
-    background: transparent;
 
 }
+label {
+    font-size: 13px;
+    font-family: "Poppins";
+    color: rgba(0, 0, 0, 0.692);
+    margin-right: 10px; /* Add spacing to the right of the label */
+}
+
+select#occupation {
+    padding: 5px;
+    border-radius: 10px;
+    font-family: "Poppins";
+}
+
+select#occupation option {
+    font-size: 14px;
+    color: #333; /* Text color of options */
+}
+
+select#occupation::after {
+    content: '\25BC'; /* Unicode character for down arrow */
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensure the arrow doesn't interfere with clicking the dropdown */
+}
+
 
 .login-btn,
 .register-btn {
     width: 1000%;
     padding: 10px;
     cursor: pointer;
-    background: skyblue;
+    background:rgba(148, 172, 180, 1); 
     border: none;
     outline: none;
     border-radius: 5px;
@@ -115,8 +159,8 @@
 }
 .login-btn:hover,
 .register-btn:hover {
-    background: rgb(64, 179, 224);
-    color: #ffffff;
+background:rgb(119, 140, 146); 
+color: #ffffff;
 }
 
 .check-box {
@@ -129,9 +173,12 @@ span {
     font-size: 14px;
     bottom: 68px;
     position: absolute;
-    margin: 0 10px 0;
+    margin: 0 0 0 5px; /* Adjust the left margin to 20px to move the text closer to the checkbox icon */
+    white-space: nowrap; /* Prevent line breaks */
+
 
 }
+
 
 #login {
     left: 50px;
@@ -140,38 +187,72 @@ span {
 
 #register {
     left: 450px;
+    margin-top: -50px;
 
 }
 
+/* Style the "Remember Me" checkbox and label */
+#remember-me {
+    margin-right: 20px; /* Adjust spacing */
+
+}
+
+label[for="remember-me"] {
+
+    display:flex; /* Display as inline-block to keep the text on one line */
+    align-items: left;
+    margin-top: 30px; 
+
+    color: #777;
+    font-family: "Poppins"; /* Change the font-family */
+
+    font-size: 14px;
+    white-space: nowrap; /* Prevent line breaks */
+
+}
+
+/* Style the "Forgot Password" link */
+.forgot-password-link {
+    white-space: nowrap; /* Prevent line breaks */
+    /* font-family: "Road Rage"; */
+    float: right;
+
+    display: block;
+    align-items: right;
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 10px;
+    position: absolute;
+    margin-left: 190px; /* Move the button 10 pixels to the right */
+    font-family: "Poppins";
+  }
+
+  .forgot-password-link:hover {
+    text-decoration: underline;
+    
+  }
 
 /* --------------------------------- SNAKBAR - TOAST  ---------------------------------  */
 
 /* The snackbar - position it at the bottom and in the middle of the screen */
 #snackbar {
     visibility: hidden;
-    /* Hidden by default. Visible on click */
     min-width: 250px;
-    margin-left: -125px;
     color: #fff;
-    /* Text color */
-    background-color: #333;
-    /* Background color */
+    background-color: #333333a0;
+    justify-content: center;
     text-align: center;
+    font-size: 1.24rem;
+    display: flex;
     padding: 16px;
     position: fixed;
-    /* Sit on top of the screen */
-    z-index: 1;
-    /* Add a z-index if needed */
-    left: 50%;
-    bottom: 50%;
-    /* Place it in the middle vertically */
-    transform: translate(-50%, -50%);
-    /* Center horizontally and vertically */
-    border-radius: 5px;
-    /* Rounded corners */
+    left: 30%;
+    bottom: 10%;
+    transform: translateX(-50%,-50%);
+    border-radius: 80px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    /* Box shadow for a subtle effect */
 }
+
 
 /* Show the snackbar when clicking on a button (class added with JavaScript) */
 #snackbar.show {
@@ -180,86 +261,55 @@ span {
     /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
     However, delay the fade out process for 2.5 seconds */
     -webkit-animation: fadein 1.0s, fadeout 1.0s 2.5s;
-    animation: fadein 1.0s, fadeout 1.0s 2.5s;
+    animation: fadein 500ms, fadeout 500ms 2500ms;
 }
 
 /* Animations to fade the snackbar in and out */
 @-webkit-keyframes fadein {
     from {
-        bottom: -50%;
+        bottom: 0;
         opacity: 0;
     }
 
     to {
-        bottom: 50%;
+        bottom: 10%;
         opacity: 1;
     }
 }
 
 @keyframes fadein {
     from {
-        bottom: -50%;
+        bottom: 0;
         opacity: 0;
     }
 
     to {
-        bottom: 50%;
+        bottom: 10%;
         opacity: 1;
     }
 }
 
 @-webkit-keyframes fadeout {
     from {
-        bottom: 50%;
+        bottom: 10%;
         opacity: 1;
     }
 
     to {
-        bottom: -50%;
+        bottom: 0%;
         opacity: 0;
     }
 }
 
 @keyframes fadeout {
     from {
-        bottom: 50%;
+        bottom: 10%;
         opacity: 1;
     }
 
     to {
-        bottom: -50%;
+        bottom: 0%;
         opacity: 0;
     }
 }
 
-
-/* ------------ for home2.php ------------ */
-.pdf-container {
-    text-align: left; /* Align the PDF files to the left */
-  }
-  
-  .pdf-box {
-    display: inline-block; /* Display PDF boxes side by side */
-    margin-right: 20px; /* Add spacing between PDF boxes (adjust as needed) */
-  }
-/* Sidebar/menu */
-.w3-sidebar {
-    width: 300px;
-    background-color: rgba(54, 37, 244, 0.14); /* Set the background color to white */
-    color: black; /* Set text color to black */
-    font-weight: bold;
-  }
-  
-  /* Change the color of the sidebar links on hover */
-  .w3-sidebar .w3-bar-item:hover {
-    background-color: white;
-    color: black;
-  }
-  .w3-jumbo{
-    color: darkslateblue;
-  }
-
-.w3-xxxlarge{
-    color:darkslateblue;
-    opacity: 70%;
-}
