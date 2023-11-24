@@ -6,6 +6,8 @@ if (isset($_SESSION['username'])) {
     // User is already logged in, show content for authenticated users
     ?>
 
+    
+
 <!DOCTYPE html>
     <html>
     <head>
@@ -20,15 +22,27 @@ if (isset($_SESSION['username'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
     </head>
+    <style>
+        #icons {
+   
+          padding-top: 335px;
+     
+      }
+    </style>
     <body class="w3-content" style="max-width:1200px">
     <div class="container-first">
         <div class= "container-second">
             <div class="vertical-box">
             <img src="img/avatar.svg" alt="User Avatar" class="avatar" >
             <p   class="username" ><?php echo $_SESSION['username']; ?>  </p>
-            <img src="img/settings.svg" alt="User Avatar" class="logout" width="20" height="20">
-            <!-- <img src="img/logout.svg" alt="User Avatar" class="logout" width="20" height="20"> -->
-            <a href="logout.php"><img src="img/logout.svg" alt="User Avatar" class="logout1" width="20" height="20"></a>
+            <div id="icons">
+
+            <img src="/project/img/manCircleIcon.png" alt="User Avatar" width="35" height="35" style="margin:-4px -5px;">
+            <a href=" "><img src="/project/img/hierarchy.png" alt="User Avatar" width="20" height="20"></a>
+            <a href="/project/displays/mission-vision-values.php "><img src="/project/img/missionVision.png" alt="User Avatar" width="20" height="20"></a>
+            <img src="/project/img/settings.svg" alt="User Avatar"  width="20" height="20">
+            <a href="/project/logout.php"><img src="/project/img/logout.svg" alt="User Avatar" width="20" height="20"></a>
+          </div>
 
            </div>
             <div class="container-third">

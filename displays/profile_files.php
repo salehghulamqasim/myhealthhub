@@ -1,6 +1,9 @@
 <?php
 session_start();
-?>
+include("/project/form/userData.php");
+
+    ?>
+
 <!DOCTYPE html>
     <html>
     <head>
@@ -42,18 +45,18 @@ session_start();
            
                 <div class="hey">
                 <?php
-                        if ($_SESSION['occupation'] === 'Staff') {
-                            // If the user's occupation is "Staff," display "Nurse's name" and add a grey line
-                            echo '<p>Nurse\'s name</p>';
-                            echo '<div class="grey-line"></div>';
-                        } else {
-                            // For all other occupations, display "Doctor's name" and add a grey line
-                            echo '<p>Doctor\'s name</p>';
-                            echo '<div class="grey-line"></div>';
-                        }
-                        ?>
+                    // Check if the 'name' session variable is set and not empty
+                    if (!empty($_SESSION['name'])) {
+                        // Use the 'name' session variable to display the user's name
+                        echo '<p>Name: ' . htmlspecialchars($_SESSION['name']) . '</p>';
+                    } else {
+                        // Fallback to the 'username' if 'name' is not available
+                        echo '<p>Name: ' . htmlspecialchars($_SESSION['username']) . '</p>';
+                    }
+                    echo '<div class="grey-line"></div>';
+                    ?>
                   <div class="grey-line"></div>
-                    <p>Email</p>
+                  <p>Email: <?php echo htmlspecialchars($_SESSION['Email']); ?></p>
                     <div class="grey-line"></div>
                     <a href="personalfiles/file1.php" style="text-decoration: none;">
                         <p>Personal file form</p>

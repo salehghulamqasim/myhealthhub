@@ -38,7 +38,11 @@ if (isset($_SESSION['username'])) {
         transform: scale(0.95) translateY(0.50px) scaleX(-1); /* Flip horizontally */
 
         }
-        
+        .vl {
+        border-left: 0.5px rgba(102, 102, 102, 0.20) solid;
+        height: 420px;
+        margin: -29px 110px;
+}
     </style>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
@@ -72,9 +76,9 @@ if (isset($_SESSION['username'])) {
 
                     <a href="file1.php"><button class="btn" type="button">file 1</button></a>
                     <a href="file2.php"><button class="btn selected" type="button">file 2</button></a>
-                    <a href="file3.php"><button class="btn" type="button">file 3</button></a>
-                    <a href="file4.php"><button class="btn" type="button">file 4</button></a>
-                    <a href="file5.php"><button class="btn" type="button">file 5</button></a>
+                    <a href=""><button class="btn" type="button">file 3</button></a>
+                    <a href=""><button class="btn" type="button">file 4</button></a>
+                    <a href=""><button class="btn" type="button">file 5</button></a>
                     </div>
                     <div class="flex-container">
                     <p class="heading" style="margin-left:  25px;">Standard</p>
@@ -90,77 +94,9 @@ if (isset($_SESSION['username'])) {
                     <div class="grey-line"></div>
                     <div class="standards">
 
-                      <div class="flex-container">
-                      <p>LD.14.3</p>
-                      <p class="measurment-list" style="margin-right: 356px;">Clinical privilege signed by the medical director</p>
-                      <div class="box">
-                      <input   type="checkbox"  id="checkbox">
-                      <input type="checkbox"  id="checkbox">
-                      <input  type="checkbox"  id="checkbox">
-                      </div>
-                      </div>
-
-                      <div class="grey-line"></div>
-
-                      <div class="flex-container">
-                      <p>LD.14.4</p>
-                      <p class="measurment-list" style="margin-right: 490px;">evidence of re- privileging</p>
-                      <div class="box">
-                      <input   type="checkbox"  id="checkbox">
-                      <input type="checkbox"  id="checkbox">
-                      <input  type="checkbox"  id="checkbox">
-                      </div>
-                      </div>
-
-                      <div class="grey-line"></div>
-
-                      <div class="flex-container">
-                      <p>LD.15.1</p>
-                      <p class="measurment-list" style="margin-right: 441px;">Attendance at general orientation</p>
-                      <div class="box">
-                      <input   type="checkbox"  id="checkbox">
-                      <input type="checkbox"  id="checkbox">
-                      <input  type="checkbox"  id="checkbox">
-                      </div>
+                    
                     </div>
-
-                      <div class="grey-line"></div>
-
-                      <div class="flex-container">
-                      <p>LD.15.2</p>
-                      <p class="measurment-list" style="margin-right: 360px;">Attendance at department specific orientation</p>
-                      <div class="box">
-                      <input   type="checkbox"  id="checkbox">
-                      <input type="checkbox"  id="checkbox">
-                      <input  type="checkbox"  id="checkbox">
-                      </div>
-                    </div>
-
-                      <div class="grey-line"></div>
-
-                      <div class="flex-container">
-                      <p>LD.16.2</p>
-                      <p class="measurment-list" style="margin-right: 356px;">Initial competency assessment in employee file</p>
-                      <div class="box">
-                      <input   type="checkbox"  id="checkbox">
-                      <input type="checkbox"  id="checkbox">
-                      <input  type="checkbox"  id="checkbox">
-                      </div>
-                    </div>
-
-                      <div class="grey-line"></div>
-                      
-                      <div class="flex-container">
-                      <p>LD.16.3</p>
-                      <p class="measurment-list" style="margin-right: 431px;">Annual competency in employee file</p>
-                      <div class="box">
-                      <input   type="checkbox"  id="checkbox">
-                      <input type="checkbox"  id="checkbox">
-                      <input  type="checkbox"  id="checkbox">
-                      </div>
-                    </div>
-                    </div>
-                    <img src="/project/img/vector.svg" alt="arrowback" class="arrowback" width="30px" id="prevPage">
+                    <!-- <img src="/project/img/vector.svg" alt="arrowback" class="arrowback" width="30px" id="prevPage"> -->
                     
                     <div class="vl"></div>
                     

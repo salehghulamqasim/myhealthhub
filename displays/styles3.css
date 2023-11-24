@@ -351,3 +351,10 @@ h3 {
   outline: none;
   cursor: pointer;
 }
+
+#icons{
+  display:flex;
+  flex-direction: column;
+  padding-top:390px;
+  gap:14px;
+}

@@ -452,6 +452,7 @@ a.policy:hover {
 
 .measurment-list {
   margin-right: 10px;
+
 }
 
 
@@ -462,3 +463,10 @@ a.policy:hover {
 }
 
 
+
+#icons{
+  display:flex;
+  flex-direction: column;
+  padding-top:390px;
+  gap:14px;
+}

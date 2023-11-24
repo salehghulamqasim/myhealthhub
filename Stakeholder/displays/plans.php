@@ -58,7 +58,7 @@ if (isset($_SESSION['username'])) {
             background-color: #6C756B;
             border-color: rgba(0, 0, 0, 0);
             font-size: 16px;
-            margin: -22px 693px;
+            margin: -29px 693px;
             text-align: center;
             position: absolute;
             display: flex;
@@ -67,7 +67,7 @@ if (isset($_SESSION['username'])) {
         }
           .hey {
             width: 876px;
-            margin: -16px 0;
+            margin: -15px 0;
             padding-left: 40px;
 
         }

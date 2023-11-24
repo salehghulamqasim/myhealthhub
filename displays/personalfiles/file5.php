@@ -163,7 +163,7 @@ if (isset($_SESSION['username'])) {
                     </div>
 
                     </div>
-                    <button type="submit" class="short_button"> Submit </button>
+                    <!-- <button type="submit" class="short_button"> Submit </button> -->
 
                     <div class="vl"></div>
                     

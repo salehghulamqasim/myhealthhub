@@ -40,14 +40,13 @@ if (isset($_SESSION['username'])) {
                     background: #889DA4;
                     color: white;
                     margin-left: -1px;
-                    margin-top: 19px;
+                    margin-top: 0px;
 
             }
             /* for the text inside the bar . it moves it up and down , right and left*/
             .add-more-bar p {
                 margin: 3px 0;
                 padding-left: 21px;
-                color: black;
                 font-size: 18px;
             }
         
@@ -67,10 +66,10 @@ if (isset($_SESSION['username'])) {
             padding-left: 30px;
         }
           .hey {
-            width: 876px;
-            margin: -4px 2px;
-            padding-left: 13px;
-            
+            width: 874px;
+            margin: -8px 0;
+            padding-left: 10px;
+
         }
 
           /* Style for the container of the custom checkbox */
@@ -105,32 +104,57 @@ if (isset($_SESSION['username'])) {
         }
 
 
-            .assigned-doctor {
-      /* position: absolute; */
-            margin: -30px 468px;
+        .member-word {
+            text-align: right;
+            margin-right: 788px;
+            padding-top: 10px;
+            /* margin-top: 20px; */
+            color: #271E4A;
+
+            font-size: 20px;
+            font-family: "kanit";
+            }
+
+         /* .add-more-bar p {
+                margin: 3px 0;
+                padding-left: 21px;
+                font-size: 18px;
+
+            } */
+
+        /* .add-more-bar {
+            width: 890px;
+            height: 35px;
+            border: 1px solid #ccc;
+            outline: none;
+            border-radius: 47px;
+            background: #889DA4;
+            color: white;
+            margin-left: 30px;
+
+        } */
+
+        /* for the text inside the bar . it moves it up and down , right and left*/
+        .add-more-bar p {
+            margin: 3px 0;
+            padding-left: 16px;
             font-size: 18px;
-            color: black;
+        }
+        .position-word {
+            display: flex;
+            flex-direction: row;
+            margin: -30px 478px;
             white-space: nowrap;
-
-            }
-
-            .assigned-doctor p {
-            margin-right: 15px;
-            }
+            gap:5px;   uncomment to add gap between words
             
-            .flex-container {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                }
-
-            .grey-line {
-                width: 100%;
-                height: 1px;
-                background-color: rgba(128, 128, 128, 0.388);
-            }
+        }
 
 
+  input[type="checkbox"] {
+    margin-right: 63px;
+    margin-top: 10px;
+        float: right;
+  }
 
 
     </style>
@@ -154,45 +178,49 @@ if (isset($_SESSION['username'])) {
         
         
                 <div class= "container-forth">
+                <h4 class="member-word">All Members</h4>
 
                 <div class="add-more-bar">
-                     <p>Responsibility</p> 
+                     <p>Add more</p>
+                <!-- TODO  add policity hyperlinks-->
+                <div class="position-word" >
+                    <p style="font-size: 15px;">Scope</p>
+                    <p style="font-size: 15px;">Plans</p>
+                    <p style="font-size: 15px;">Programs</p>
+                    <p style="font-size: 15px;">Policies</p>
+                    <p style="font-size: 15px;">Procedure</p>
+
+                </div>
                 
-                <div class="assigned-doctor">
-                <p style="padding-left: 11px;">Assigned Doctor</p>
-    
-                    
+                
                 </div>
-
-                </div>
-
                 <div class="hey">
-             <div class="flex-container">
-                <p>Permanent CMO</p>
-                <div style="margin-right: 311px; margin-top:10px ">
-                          <p>Dr Eman</p>
-                        </div>
-                        <button type="button"  class="short_button" "> display </button>
-
-             </div>
+                    <p>Ahmed
                     
-             <div class="grey-line"></div>
-                    <div class="flex-container">
-                        <p>Temporarily CMO</p>
-                         <p style="margin-right: 311px;">Dr Lama</p>
-                         <button type="button"  class="short_button" "> display </button>
+                    <input type="checkbox" name="scope" class="checkbox">
+                    <input type="checkbox" name="plans" class="checkbox">
+                    <input type="checkbox" name="programs" class="checkbox">
+                    <input type="checkbox" name="policies" class="checkbox">
+                    <input type="checkbox" name="procedures" class="checkbox">
 
-                   </div>
-                   
-                   <div class="grey-line"></div>
-                   <div class="flex-container">
-                        <p>HOD</p>
-                         <p style="margin-right: 311px;"> </p>
-                         <button type="button"  class="short_button" "> display </button>
+                    </p>
 
-                   </div>
-                   
+                    <div class="grey-line"></div>
+
+                    <p>Khalid
+
+                    <input type="checkbox" name="scope" class="checkbox">
+                    <input type="checkbox" name="plans" class="checkbox">
+                    <input type="checkbox" name="programs" class="checkbox">
+                    <input type="checkbox" name="policies" class="checkbox">
+                    <input type="checkbox" name="procedures" class="checkbox">
+
                     
+                   </p>
+                   
+                    <div class="grey-line"></div>
+                    <!-- <p class="page-number2">Page 1 of 1</p> -->
+
                 </div>
                 </div>
             </div>

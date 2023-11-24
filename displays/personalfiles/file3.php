@@ -38,7 +38,12 @@ if (isset($_SESSION['username'])) {
         transform: scale(0.95) translateY(0.50px) scaleX(-1); /* Flip horizontally */
 
         }
-        
+        .vl {
+        border-left: 0.5px rgba(102, 102, 102, 0.20) solid;
+        height: 420px;
+        margin: -29px 110px;
+}
+  
     </style>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
@@ -90,78 +95,10 @@ if (isset($_SESSION['username'])) {
                     <div class="grey-line"></div>
                     <div class="standards">
 
-                      <div class="flex-container">
-                      <p>LD.18.3</p>
-                      <p class="measurment-list" style="margin-right: 441px;">Evidence of continuous education</p>
-                      <div class="box">
-                      <input   type="checkbox"  id="checkbox">
-                      <input type="checkbox"  id="checkbox">
-                      <input  type="checkbox"  id="checkbox">
-                      </div>
-                      </div>
-
-                      <div class="grey-line"></div>
-
-                      <div class="flex-container">
-                      <p>LD.19.1</p>
-                      <p class="measurment-list" style="margin-right: 399px;">Basic life support education and training</p>
-                      <div class="box">
-                      <input   type="checkbox"  id="checkbox">
-                      <input type="checkbox"  id="checkbox">
-                      <input  type="checkbox"  id="checkbox">
-                      </div>
-                      </div>
-
-                      <div class="grey-line"></div>
-
-                      <div class="flex-container">
-                      <p>LD.19.2</p>
-                      <p class="measurment-list" style="margin-right: 369px;">Advanced life support education and training</p>
-                      <div class="box">
-                      <input   type="checkbox"  id="checkbox">
-                      <input type="checkbox"  id="checkbox">
-                      <input  type="checkbox"  id="checkbox">
-                      </div>
-                    </div>
-
-                      <div class="grey-line"></div>
-
-                      <div class="flex-container">
-                      <p>LD.20.2</p>
-                      <p class="measurment-list" style="margin-right: 473px;">Probationary staff evaluation</p>
-                      <div class="box">
-                      <input   type="checkbox"  id="checkbox">
-                      <input type="checkbox"  id="checkbox">
-                      <input  type="checkbox"  id="checkbox">
-                      </div>
-                    </div>
-
-                      <div class="grey-line"></div>
-
-                      <div class="flex-container">
-                      <p>LD.20.2</p>
-                      <p class="measurment-list" style="margin-right: 514px;">Annual staff evaluation</p>
-                      <div class="box">
-                      <input   type="checkbox"  id="checkbox">
-                      <input type="checkbox"  id="checkbox">
-                      <input  type="checkbox"  id="checkbox">
-                      </div>
-                    </div>
-
-                      <div class="grey-line"></div>
-                      
-                      <div class="flex-container">
-                      <p>LD.13.5</p>
-                      <p style="white-space:nowrap; margin-right: 40px;" class="measurment-list" >Evaluations include personal goals to achieve for the next year that the employee will carry out</p>
-                      <div class="box">
-                      <input   type="checkbox"  id="checkbox">
-                      <input type="checkbox"  id="checkbox">
-                      <input  type="checkbox"  id="checkbox">
-                      </div>
-                    </div>
+                   
 
                     </div>
-                    <img src="/project/img/vector.svg" alt="arrowback" class="arrowback" width="30px" id="prevPage">
+                    <!-- <img src="/project/img/vector.svg" alt="arrowback" class="arrowback" width="30px" id="prevPage"> -->
 
                     <div class="vl"></div>
                     

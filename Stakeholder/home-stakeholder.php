@@ -32,14 +32,15 @@ if (isset($_SESSION['username'])) {
     border-radius: 50px;
 }
 
-.list-group-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding:4px 0;
-    
+    .list-group-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:4px 0;
+        
 
-}
+    }
+
     </style>
     <body class="w3-content" style="max-width:1200px">
     <div class="container-first">
@@ -47,9 +48,12 @@ if (isset($_SESSION['username'])) {
             <div class="vertical-box">
             <img src="/project/img/avatar.svg" alt="User Avatar" class="avatar" >
             <p   class="username" ><?php echo $_SESSION['username']; ?>  </p>
-            <img src="/project/img/settings.svg" alt="User Avatar" class="logout" width="20" height="20">
-            <!-- <img src="img/logout.svg" alt="User Avatar" class="logout" width="20" height="20"> -->
-            <a href="/project/logout.php"><img src="/project/img/logout.svg" alt="User Avatar" class="logout" width="20" height="20"></a>
+            <div id="icons">
+            <a href=" "><img src="/project/img/hierarchy.png" alt="User Avatar" width="20" height="20"></a>
+            <a href="/project/Stakeholder/displays/mission-vision-values.php"><img src="/project/img/missionVision.png" alt="User Avatar" width="20" height="20"></a>
+            <img src="/project/img/settings.svg" alt="User Avatar"  width="20" height="20">
+            <a href="/project/logout.php"><img src="/project/img/logout.svg" alt="User Avatar" width="20" height="20"></a>
+            </div>
 
            </div>
             <div class="container-third">
@@ -89,7 +93,7 @@ if (isset($_SESSION['username'])) {
 
 
   <li class="list-group-item">Members
-    <a href="/project/Stakeholder/members.php"  style="text-decoration: none;">
+    <a href="/project/Stakeholder/displays/members.php"  style="text-decoration: none;">
     <button type="button" class="button">display</button></a>
   </li>
 

@@ -25,11 +25,27 @@ if (mysqli_num_rows($result) > 0) {
             $_SESSION['username'] = $username;
             $_SESSION['occupation'] = $row['occupation'];
 
+            // ----------------------------------------------
+            // add more sessions then retrieve them
+            // $_SESSION['email'] = $email;
+            // $_SESSION['EmployeeType'] = $row['EmployeeType'];
+            // $_SESSION['FullName'] = $FullName;
+            // $_SESSION['Email'] = $row['Email'];
+            // $_SESSION['Gender'] = $Gender;
+            // $_SESSION['Department'] = $row['Department'];
+            // $_SESSION['Ability'] = $Ability;
+            // $_SESSION['Department'] = $row['Department'];
+            // $_SESSION['Gender'] = $Gender;
+            // $_SESSION['Department'] = $row['Department'];
+            // $_SESSION['Gender'] = $Gender;
+            // $_SESSION['Department'] = $row['Department'];
+            // ----------------------------------------------
+
             // Redirect user to different pages based on occupation
             if ($row['occupation'] === 'Doctor') {
                 header("location: home.php"); // Redirect to the doctor page
             } elseif ($row['occupation'] === 'Staff') {
-                header("location: home.php"); // Redirect to the staff page 
+                header("location: /project/staff/home-n.php"); // Redirect to the staff page 
             } elseif ($row['occupation'] === 'Cmo') {
                 header("location: /project/cmo/home-cmo.php"); // Redirect to the cmo page
             } elseif ($row['occupation'] === 'Stakeholder') {
@@ -52,3 +68,4 @@ if (mysqli_num_rows($result) > 0) {
 // Close the database connection
 mysqli_close($conn);
 ?>
+

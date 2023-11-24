@@ -47,7 +47,6 @@ if (isset($_SESSION['username'])) {
             .add-more-bar p {
                 margin: 3px 0;
                 padding-left: 21px;
-                color: black;
                 font-size: 18px;
             }
         
@@ -68,9 +67,8 @@ if (isset($_SESSION['username'])) {
         }
           .hey {
             width: 876px;
-            margin: -4px 2px;
-            padding-left: 13px;
-            
+            margin: -16px 0;
+            padding-left: 26px;
         }
 
           /* Style for the container of the custom checkbox */
@@ -105,34 +103,6 @@ if (isset($_SESSION['username'])) {
         }
 
 
-            .assigned-doctor {
-      /* position: absolute; */
-            margin: -30px 468px;
-            font-size: 18px;
-            color: black;
-            white-space: nowrap;
-
-            }
-
-            .assigned-doctor p {
-            margin-right: 15px;
-            }
-            
-            .flex-container {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                }
-
-            .grey-line {
-                width: 100%;
-                height: 1px;
-                background-color: rgba(128, 128, 128, 0.388);
-            }
-
-
-
-
     </style>
     <body class="w3-content" style="max-width:1200px">
     <div class="container-first">
@@ -148,51 +118,57 @@ if (isset($_SESSION['username'])) {
 
             <div class="container-third">
             <h3 class="personal-files">
-        <a href="/project/Stakeholder/home-stakeholder.php" style="text-decoration: none;">
+            <a href="javascript:history.go(-1)" style="text-decoration: none;">
             <img src="/project/img/vector.svg" alt="Arrow" class="arrow" width="30px" >
-        </a>Plans </h3>
+        </a>Mission vision and values </h3>
         
         
                 <div class= "container-forth">
 
                 <div class="add-more-bar">
-                     <p>Responsibility</p> 
-                
-                <div class="assigned-doctor">
-                <p style="padding-left: 11px;">Assigned Doctor</p>
-    
-                    
+                     <p>Add more</p> 
                 </div>
-
-                </div>
-
                 <div class="hey">
-             <div class="flex-container">
-                <p>Permanent CMO</p>
-                <div style="margin-right: 311px; margin-top:10px ">
-                          <p>Dr Eman</p>
-                        </div>
-                        <button type="button"  class="short_button" "> display </button>
+                <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark">
+                            <img src="/project/img/CheckBox.svg" alt="Custom Icon" width="15px">
+                        </span>
+                    </label>
+                    <p>Mission
+                    <a href="#"  style="text-decoration: none;">
+                        <button type="button" class="short_button"> display</button>
+                        <img src="/project/img/edit.svg" width="25px"  class=add-edit-delete>
 
-             </div>
-                    
-             <div class="grey-line"></div>
-                    <div class="flex-container">
-                        <p>Temporarily CMO</p>
-                         <p style="margin-right: 311px;">Dr Lama</p>
-                         <button type="button"  class="short_button" "> display </button>
+                    </p>
 
-                   </div>
-                   
-                   <div class="grey-line"></div>
-                   <div class="flex-container">
-                        <p>HOD</p>
-                         <p style="margin-right: 311px;"> </p>
-                         <button type="button"  class="short_button" "> display </button>
+                    <div class="grey-line"></div>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark">
+                            <img src="/project/img/CheckBox.svg" alt="Custom Icon" width="15px">
+                        </span>
+                    </label>
+                
+                    <p>Vision
+                    <a href="#"  style="text-decoration: none;">
+                        <button type="button" class="short_button"> display</button>
+                        <img src="/project/img/edit.svg" width="25px"  class=add-edit-delete>
 
-                   </div>
-                   
-                    
+                    </p>
+                    <div class="grey-line"></div>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark">
+                            <img src="/project/img/CheckBox.svg" alt="Custom Icon" width="15px">
+                        </span>
+                    </label>
+                    <p>Values
+                    <a href="#"  style="text-decoration: none;">
+                        <button type="button" class="short_button"> display</button>
+                        <img src="/project/img/edit.svg" width="25px"  class=add-edit-delete>
+
+                    </p>
                 </div>
                 </div>
             </div>

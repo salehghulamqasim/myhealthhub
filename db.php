@@ -1,5 +1,5 @@
 <?php
-//we start with username and passowrd empty to see if infomrations which user entered are correct or not
+//------- I AM NOT USING THIS FILE . DELETE IT IF NECESSARY -------
 $servername = "localhost"; 
 $username = "";
 $password = "";

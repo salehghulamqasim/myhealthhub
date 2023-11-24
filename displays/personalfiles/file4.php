@@ -161,7 +161,7 @@ if (isset($_SESSION['username'])) {
                     </div>
 
                     </div>
-                    <img src="/project/img/vector.svg" alt="arrowback" class="arrowback" width="30px" id="prevPage">
+                    <!-- <img src="/project/img/vector.svg" alt="arrowback" class="arrowback" width="30px" id="prevPage"> -->
 
                     <div class="vl"></div>
                     

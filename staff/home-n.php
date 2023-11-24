@@ -26,9 +26,13 @@ if (isset($_SESSION['username'])) {
             <div class="vertical-box">
             <img src="/project/img/avatar.svg" alt="User Avatar" class="avatar" >
             <p   class="username" ><?php echo $_SESSION['username']; ?>  </p>
-            <img src="/project/img/settings.svg" alt="User Avatar" class="logout" width="20" height="20">
-            <!-- <img src="img/logout.svg" alt="User Avatar" class="logout" width="20" height="20"> -->
-            <a href="/project/logout.php"><img src="/project/img/logout.svg" alt="User Avatar" class="logout" width="20" height="20"></a>
+            
+            <div id="icons">
+            <a href=" "><img src="/project/img/hierarchy.png" alt="User Avatar" width="20" height="20"></a>
+            <a href="/project/staff/displaysN/mission-vision-values.php"><img src="/project/img/missionVision.png" alt="User Avatar" width="20" height="20"></a>
+            <img src="/project/img/settings.svg" alt="User Avatar"  width="20" height="20">
+            <a href="/project/logout.php"><img src="/project/img/logout.svg" alt="User Avatar" width="20" height="20"></a>
+          </div>
 
            </div>
             <div class="container-third">
