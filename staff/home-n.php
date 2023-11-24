@@ -6,15 +6,13 @@ if (isset($_SESSION['username'])) {
     // User is already logged in, show content for authenticated users
     ?>
 
-    
-
 <!DOCTYPE html>
     <html>
     <head>
     <title> Profile</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="home_style.css">
+    <link rel="stylesheet" type="text/css" href="/project/home_style.css">
     
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
@@ -22,24 +20,16 @@ if (isset($_SESSION['username'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
     </head>
-    <style>
-        #icons {
-   
-          padding-top: 335px;
-     
-      }
-    </style>
     <body class="w3-content" style="max-width:1200px">
     <div class="container-first">
         <div class= "container-second">
             <div class="vertical-box">
-            <img src="img/avatar.svg" alt="User Avatar" class="avatar" >
+            <img src="/project/img/avatar.svg" alt="User Avatar" class="avatar" >
             <p   class="username" ><?php echo $_SESSION['username']; ?>  </p>
+            
             <div id="icons">
-
-            <img src="/project/img/manCircleIcon.png" alt="User Avatar" width="35" height="35" style="margin:-4px -5px;">
             <a href=" "><img src="/project/img/hierarchy.png" alt="User Avatar" width="20" height="20"></a>
-            <a href="/project/displays/mission-vision-values.php "><img src="/project/img/missionVision.png" alt="User Avatar" width="20" height="20"></a>
+            <a href="/project/staff/displaysN/mission-vision-values.php"><img src="/project/img/missionVision.png" alt="User Avatar" width="20" height="20"></a>
             <img src="/project/img/settings.svg" alt="User Avatar"  width="20" height="20">
             <a href="/project/logout.php"><img src="/project/img/logout.svg" alt="User Avatar" width="20" height="20"></a>
           </div>
@@ -52,21 +42,19 @@ if (isset($_SESSION['username'])) {
                             <input type="text" placeholder="Search for other physician">
                         <i class="fa fa-search"></i>
                     </div>
-                   
-                    <div class="inner-box"> 
+                    <div class="inner-box">
                     <div class="container">
                     <ul class="list-group">
    <li class="list-group-item">Personal files
-    <a href="displays/profile_files.php"  style="text-decoration: none;">
+    <a href="/project/displays/profile_files.php"  style="text-decoration: none;">
      <button type="button" class="button">display</button>
     </a>
   </li>
 
     <li class="list-group-item">Education
-    <a href="<?php echo ($_SESSION['occupation'] === 'Staff') ? '/project/staff/displaysN/education-N.php' : 'displays/education.php'; ?>" style="text-decoration: none;">
+    <a href="displaysN/education-N.php"  style="text-decoration: none;">
     <button type="button" class="button">display</button>
     </a>
-
   </li>
 
   <li class="list-group-item">Certifications
@@ -75,19 +63,19 @@ if (isset($_SESSION['username'])) {
   </li>
 
   <li class="list-group-item">Competency
-  <a href="displays/competency.php"  style="text-decoration: none;">
+  <a href="/project/displays/competency.php"  style="text-decoration: none;">
     <button type="button" class="button">display</button></a>
 
   </li>
 
   <li class="list-group-item">Privilege
-  <a href="displays/privilage.php"  style="text-decoration: none;">
+  <a href="/project/displays/privilage.php"  style="text-decoration: none;">
     <button type="button" class="button">display</button></a>
 
   </li>
 
   <li class="list-group-item"> OVR - Report
-    <a href="displays/ovr.php"  style="text-decoration: none;">
+    <a href="/project/displays/ovr.php"  style="text-decoration: none;">
     <button type="button" class="button">display</button></a>
   </li>
 
@@ -102,12 +90,12 @@ if (isset($_SESSION['username'])) {
   </li>
 
   <li class="list-group-item">Other's Privilege
-    <a href="displays/otherprivilages.php"  style="text-decoration: none;">
+    <a href="/project/displays/otherprivilages.php"  style="text-decoration: none;">
     <button type="button" class="button">display</button></a>
   </li>
 
   <li class="list-group-item">Medical committee
-    <a href="displays/medicalCommitee.php"  style="text-decoration: none;">
+    <a href="/project/displays//medicalCommitee.php"  style="text-decoration: none;">
     <button type="button" class="button">display</button></a>
   </li>
 
@@ -120,7 +108,7 @@ if (isset($_SESSION['username'])) {
 
 </div>
                     </div>
-                    <img src="img/eman.svg" alt="Profile picture" class="profile-picture" width="100" height="70">
+                    <img src="/project/img/eman.svg" alt="Profile picture" class="profile-picture" width="100" height="70">
 
                     <div class="container-fifth">
                    

@@ -1,0 +1,344 @@
+/* Global styles */
+body {
+
+    margin: 0;
+    background: linear-gradient(180deg, rgba(15, 63, 81, 0.50) 0%, rgba(15, 63, 81, 0.00) 100%);
+    padding: 0;
+}
+
+/* Container-first styles 
+this container just puts all others in middle dont remove it leave it as it is. if u make it red it will make the background red
+its same as body but its above the body to make things align correctly . so dont touch it saleh :)
+*/
+.container-first {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container-second styles
+this is the second box which shows above the first background. it have the doctor pic ,name, setting and logout icon. 
+its white color with sharp edges not rounded
+
+*/
+.container-second {
+    width: 1100px;
+    height: 650px;
+    background-color: white;
+    display: flex;
+    opacity: 0.99;
+
+    flex-direction: row;
+    align-items: center;
+}
+
+/* this is a vertical box from avatar name all way to setting and logout icon */
+.vertical-box {
+    width: 93px;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(15, 63, 81, 0.50), #dad9d95f);
+    align-items: center;
+    padding: 24px;
+
+}
+
+
+
+/* Avatar image styles the doctor picture which have the username */
+.avatar {
+    border-radius: 50%;
+    height: 50px;
+    position: relative;
+
+
+}
+
+/* Username text styles */
+.username {
+    margin-left: -2px;
+    font-size: 12px;
+    font-weight: bold;
+    
+    
+}
+
+
+
+/* Logout icons styles */
+.logout {
+    align-self: flex-end;
+    margin-top: 450px;
+}
+.logout1 {
+    align-self: flex-end;
+    margin-top: 15px;
+}
+
+/*our third container which has word "profile" in h3 form*/
+
+.container-third {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(15, 63, 81, 0.446), #dad9d95f);
+    padding: 20px;
+    flex-basis: 1;
+    flex-grow: 1;
+}
+
+/* our word "profile" above in contaienr third */
+h3 {
+    color: #271E4A;
+    font-size: 42px;
+    font-weight: 200;
+    font-family: "Kanit";
+    margin: -8px 0;
+
+}
+
+/* this is our white box inside which contains doctor picture and searchbar and fifth container */
+.container-forth {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.769);
+    border-radius: 47px;
+    box-shadow: 0px 4px 15px rgba(216, 210, 252, 0.64);
+}
+
+/*  Search bar and its styles */
+.container-forth-item.search-bar {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: -1px;
+    font-weight: 100;
+
+
+}
+.container-forth-item.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 47px;
+    background: #DBDCE0
+}
+
+.container-forth-item.search-bar i {
+    position: absolute;
+    right: 150px;
+    font-size: 20px;
+    color: #2c1f1f43;
+
+}
+
+.container-forth-item.search-bar input:focus {
+    border-color: #33333363;
+
+}
+
+/* the inside box of container forth */
+.inner-box {
+    width: 750px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 4px 15px rgba(216, 210, 252, 0.64);
+    margin-left: 170px;
+    margin-top: 15px;
+
+    border-bottom-right-radius: 47px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.profile-picture {
+    position: absolute;
+      top: 200px;
+    right: 904px;
+    width: 145px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.button {
+    color: white;
+    width: 420px;
+    height: 33px;
+    border-radius: 16px;
+    background-color: #6C756B;
+    border-color: rgba(0, 0, 0, 0);
+    font-size: 16px;
+    margin-left: 50px;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+    margin: 3px;
+    margin-right: 34px;
+}
+.button:active {
+    transform: scale(0.99) translateY(0px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.268);
+  }
+
+
+/*  Search bar and its styles */
+.Mybar {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: -1px;
+    font-weight: 100;
+
+
+}
+
+.Mybar input:focus {
+    border-color: #33333363;
+
+}
+
+.report-bar {
+    width: 890px;
+    height: 55px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 47px;
+    background: #889DA4;
+    color: white;
+    margin-left: 3px;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+
+}
+/* for the text inside the bar . it moves it up and down , right and left*/
+.report-bar p {
+    margin: 12px 1px;
+    padding-left: 13px;
+    color: white;
+    font-size: 20px;
+    font-family: Kanit;
+    font-weight: 500;
+    word-wrap: break-word
+  }
+
+
+
+select#reporttype {
+    padding: 5px;
+    border-radius: 8px;
+    font-family: "Poppins";
+    margin:9px 405px;
+    height: 35px;
+    color: #313144;
+    font-size: 20px;
+    letter-spacing: 0.60px;
+    word-wrap: break-word;
+    font-weight: 500;
+}
+
+select#reporttype:focus {
+    outline: 1px solid rgba(0, 0, 0, 0);
+
+  }
+  .page-number {
+    margin-left: -822px;
+    color: rgba(39, 30, 74, 0.80);
+    font-size: 10px;
+    font-family: Kanit;
+    font-weight: 300;
+    word-wrap: break-word
+   }
+
+
+   .grey-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.388);
+  }
+ 
+  .add-more-bar  {
+    width: 890px;
+    height: 42px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 47px;
+    background: #889DA4;
+    color: white;
+    margin-left: -14px;
+    margin-top: 19px;
+
+
+}
+
+/* for the text inside the bar . it moves it up and down , right and left*/
+.add-more-bar p {
+    margin: 5px 0;
+    padding-left: 13px;
+    font-size: 18px;
+  }
+
+  .short_button {
+    color: white;
+    width: 120px;
+    height: 33px;
+    border-radius: 16px;
+    background-color: #6C756B;
+    border-color: rgba(0, 0, 0, 0);
+    font-size: 16px;
+    margin-left: 550px;
+   text-align: center;
+   float: right;
+}
+.short_button:active {
+    transform: scale(0.95) translateY(1px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+
+  .hey{
+    width:876px;
+    margin: 20px;
+
+    
+}
+.short_button {
+    color: white;
+    width: 120px;
+    height: 33px;
+    border-radius: 16px;
+    background-color: #6C756B;
+    border-color: rgba(0, 0, 0, 0);
+    font-size: 16px;
+    margin-left: 525px;
+    text-align: center;
+  }
+  
+  .short_button:active {
+    transform: scale(0.95) translateY(1px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  #icons {
+    display: flex;
+    flex-direction: column;
+    padding-top: 370px;
+    gap: 14px;
+}
