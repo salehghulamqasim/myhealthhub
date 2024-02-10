@@ -2,8 +2,6 @@
 
 
 
-> **Note about Demo Website:** The demo version of this website hosted on 000webhost may exhibit slower performance and a different style compared to the actual website contained in this repository. This discrepancy is due to hosting limitations and does not reflect the quality and features of the website as designed in the repo.
-
 ## Built With
 - HTML
 - CSS
