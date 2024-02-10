@@ -1,7 +1,6 @@
 # Website Functionality Overview
 
-### Demo view of the website hosted in 000webhost: 
-https://cas400.000webhostapp.com
+
 
 > **Note about Demo Website:** The demo version of this website hosted on 000webhost may exhibit slower performance and a different style compared to the actual website contained in this repository. This discrepancy is due to hosting limitations and does not reflect the quality and features of the website as designed in the repo.
 
